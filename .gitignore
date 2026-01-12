@@ -42,3 +42,8 @@ next-env.d.ts
 
 # Coverage
 coverage/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.suo
