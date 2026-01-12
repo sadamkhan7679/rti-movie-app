@@ -1,0 +1,115 @@
+.container {
+    background-color: var(--color-surface);
+    min-height: 100vh;
+}
+
+.hero {
+    background-color: var(--color-secondary);
+    padding: var(--spacing-2xl) var(--spacing-lg);
+}
+
+.heroTitleSkeleton {
+    height: 32px;
+    width: 60%;
+    background: linear-gradient(
+            90deg,
+            #6a6a6a 25%,
+            #8a8a8a 50%,
+            #6a6a6a 75%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    border-radius: var(--radius-sm);
+}
+
+.content {
+    padding: var(--spacing-xl) var(--spacing-lg);
+}
+
+.posterSection {
+    display: flex;
+    margin-bottom: var(--spacing-xl);
+}
+
+.posterSkeleton {
+    width: 160px;
+    height: 240px;
+    background: var(--color-border-light);
+    border-radius: var(--radius-sm);
+    animation: pulse 1.5s infinite;
+}
+
+.infoSection {
+    flex: 1;
+    margin-left: var(--spacing-lg);
+}
+
+.yearSkeleton {
+    height: 24px;
+    width: 80px;
+    background: var(--color-border-light);
+    margin-bottom: var(--spacing-sm);
+    border-radius: var(--radius-sm);
+    animation: pulse 1.5s infinite;
+}
+
+.runtimeSkeleton {
+    height: 14px;
+    width: 60px;
+    background: var(--color-border-light);
+    margin-bottom: var(--spacing-md);
+    border-radius: var(--radius-sm);
+    animation: pulse 1.5s infinite;
+}
+
+.ratingSkeleton {
+    height: 18px;
+    width: 50px;
+    background: var(--color-border-light);
+    margin-bottom: var(--spacing-xl);
+    border-radius: var(--radius-sm);
+    animation: pulse 1.5s infinite;
+}
+
+.buttonSkeleton {
+    height: 46px;
+    width: 100%;
+    background: var(--color-border-light);
+    border-radius: var(--radius-sm);
+    animation: pulse 1.5s infinite;
+}
+
+.overview {
+    margin-bottom: var(--spacing-2xl);
+}
+
+.lineSkeleton {
+    height: 16px;
+    width: 100%;
+    background: var(--color-border-light);
+    margin-bottom: var(--spacing-sm);
+    border-radius: var(--radius-sm);
+    animation: pulse 1.5s infinite;
+}
+
+.lineSkeleton:last-child {
+    width: 70%;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
